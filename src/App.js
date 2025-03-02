@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import Navigation from './navbar/navbar.js';
+import FraudPrediction from './components/FraudPrediction.js';
+import TrainModel from './components/TrainModel.js';
+import {BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import Login from './components/Login.js';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <BrowserRouter>
+      <Navigation></Navigation>
+      <Routes>
+        <Route path="/"
+            element={<FraudPrediction />} />
+        <Route path="/ModelTraining"
+            element={<TrainModel />} />
+        
+      </Routes>
+    </BrowserRouter>
     </div>
   );
 }
