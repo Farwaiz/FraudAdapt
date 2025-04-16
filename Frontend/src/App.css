@@ -2,14 +2,6 @@
   text-align: center;
 }
 
-.navigation-link-bar a{
-  text-decoration: none;
-  color: #000;
-  font-weight: 500;
-}
-.navigation-link-bar a:active{
-  color: #EAB126
-}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -20,6 +12,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 .container {
   display:flex;
   margin:4%;
@@ -117,9 +110,9 @@ tr:nth-child(odd){
 
 
 /* Container for the fraud table */
-.fraud-table {
+.fraud-table, .Evaluation-Table {
   width: 100%;
-  max-width: 600px;
+  /* max-width: 600px; */
   margin: 20px 0;
   padding: 20px;
   border: 1px solid #ddd;

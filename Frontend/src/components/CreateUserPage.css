@@ -1,0 +1,125 @@
+/* Import the same font as navbar for consistency */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
+.create-container {
+  width: 100%;
+  max-width: 480px;
+  margin: 50px auto;
+  padding: 2.5rem;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.create-container h2 {
+  color: #034562;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.user-form {
+  width: 100%;
+}
+
+.user-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.user-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #034562;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.user-form input {
+  width: 92%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  transition: all 0.2s ease;
+}
+
+.user-form input:focus {
+  outline: none;
+  border-color: #034562;
+  box-shadow: 0 0 0 3px rgba(3, 69, 98, 0.1);
+}
+
+.user-form .error {
+  color: #dc3545;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.user-form button {
+  width: 100%;
+  padding: 0.875rem;
+  background-color: #034562;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+  transition: all 0.2s ease;
+}
+
+.user-form button:hover {
+  background-color: #023548;
+  transform: translateY(-1px);
+}
+
+.user-form button:active {
+  transform: translateY(0);
+}
+
+/* Add a security message below the form */
+.security-message {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #666;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.security-message svg {
+  width: 16px;
+  height: 16px;
+  color: #034562;
+}
+
+.password-strength {
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  display: inline-block;
+}
+
+.password-strength.weak {
+  color: #dc3545;
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+.password-strength.medium {
+  color: #ffc107;
+  background-color: rgba(255, 193, 7, 0.1);
+}
+
+.password-strength.strong {
+  color: #28a745;
+  background-color: rgba(40, 167, 69, 0.1);
+}
+  

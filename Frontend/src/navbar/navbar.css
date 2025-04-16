@@ -1,0 +1,134 @@
+.navbar {
+  background-color: #034562;
+  padding: 0.75rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* width: 100%; */
+  position: relative;
+  z-index: 1000;
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.FraudAdapt-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.FraudAdapt-name {
+  color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+.logout-container {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #b6b4b434; /* red */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  /* margin: 10px; */
+}
+
+.logout-container:hover {
+  background-color: #e2e1e148; /* darker red */
+}
+
+.logout-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link.active {
+  color: #B3EBF2;
+  background-color: rgba(179, 235, 242, 0.1);
+}
+
+.mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem 1rem;
+  }
+
+  .mobile-menu-button {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #034562;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem 1rem;
+  }
+
+  .FraudAdapt-name {
+    font-size: 1.25rem;
+  }
+} 
